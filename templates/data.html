@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block head%}{% endblock %}
+{%block body%}
+<body class="pr">
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="sidebar">
+            <img src="./static/images/Mooncloud.png" style="width:30px">    <a href="/data#Cadence">CaDence   </a>
+            <img src="./static/images/Eclipse.png" style="width:30px">    <a href="/data">Top   </a>
+        </div>
+
+        <div class="col-md-9">
+            {% include 'nav.html' %}
+            <div class="pro">
+                <div class="proj">
+                    <!-- start projects -->
+                    <center>
+                        <div class="dataplan">
+                        <h1>DATA</h1>
+                        </div>
+                        <img src="./static/images/calogo.png" id="Cadence">
+                        <!-- <h2 id="Cadence"><p class="important">CaDence</p></h2> -->
+                        
+                    </center>
+                    <div class="proj_about">
+                        <p class="important">ABOUT</p>
+                            <img src="./static/images/cass.png" style="width:300px;float:right;padding:15px;">
+                            <center><a target="_blank" href="https://endafigueroa-cadence-nb-st-version-streamlit-cadence-hiujjb.streamlit.app/"><img src="./static/images/Stars.png" style="width:30px">CHECK IT OUT LIVE<img src="./static/images/Stars.png" style="width:30px"></a><br>
+                            <a target="_blank" href="https://github.com/DATA5-2/CaDence_nb.st_version">See it on GitHub</a></center>
+                            CaDence is a responsive dashboard built to analyze user behavior and trends on ZipSpontify, a Spontify-like streaming service.
+                            This was our final group project which tasked us to generate fictional data, explore it, aggregate it, and then display it for the marketing team of ZipSontify.
+                    </div>
+                    <div class="proj_tools">
+                        <p class="important">TOOLS</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="imp">Data Processing</p>
+                                    <ul><li>Python - Core Language</li>
+                                    <li>Pandas and Numpy - Data Manipulation</li>
+                                    <li>Google Colab - Data Exploration and Development</li></ul>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="imp">Visuals</p>
+                                    <ul><li>MatPlotLib and Plotly - Graph and Plot Creation</li>
+                                    <li>Streamlit - Dashboard Platform</li>
+                                    <li>CSS - Styling</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj_process">
+                        <p class="important">PROCESS</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="./static/images/caboard.jpeg" style="width:400px;float:left;padding:15px;">
+                                The field of Data Science is vast, and it was incredibly hard to choose our tools and approach.
+                                We only had two weeks to deliver the finished product, so we went with tools with lower learning curves to ensure we produced a robust, responsive product.
+                                <br><br>
+                                My teammates created the fictional data through the use of an EventSim that resulted in a 19 column, 160,000+ line json. I completed some manual data cleaning due to the use of quotation marks in song and artist names.
+                                <br><br>Next, we discussed what correlations we wanted to do and decided what columns we should keep, which we should drop, and which we should add.
+                                <br><br>We decided that a marketing team would find regional data most useful and wanted to simulate a data collection over a six week campagin.
+                                <br>This meant that we had to add time zones via states and used a throw-away column 'ts' to be the key and value for the simulated weeks.
+                                <br>With Pandas, we added time zones and weeks, and narrowed our data to just 13 columns.
+                                <br><br>In Google Colab, we divided the correlations up between us and developed the logic and graphs needed.
+                                <br>I worked on the filtering logic that fed the aggreation functions, allowing the user to create a dataframe by filtering by both timezones and weeks.
+                                I also produced the formated print at the top of the dashboard that states unique users and duration. I produced the duration graph and the Top Users board.
+                                <br><br>Working together, we researched Streamlit for the dashboard framework due to the ease of deployment and implementation.
+                                Once the dashboard was in development, I began work on the styling. This meant altering the MatPlotLib and Plotly graphs as well as writing CSS.
+                                <br><br>After a great deal of testing, we finished on time with a product that I am proud of to this day.
+                                <br><br> If you would like to see the Google Colab notebook, you can see it <a target="_blank" href="https://github.com/DATA5-2/CaDence_nb.st_version/blob/main/CaDence.ipynb">here</a>. It is messy since it was used for testing and exploration. There is a lot of unused code that reflects attempted approaches and code development.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj_future">
+                        <p class="important">FUTURE PLANS</p>
+                        <p class="imp">Database</p>
+                            We had wanted to do this using SQL, Spark, Kafka, and Docker, but we struggled to be able to learn and impliment it within the tight timeframe and still produce something robust.
+                            <br>I would love to rework this to use these tools, or tackle them on a different data project.
+                            <br>I am extremely proud of the dashboard as it is.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

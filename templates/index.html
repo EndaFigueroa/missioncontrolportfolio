@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block head%}{% endblock %}
+{%block body%}
+<body class="pr">
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-md-7">
+            {% include 'nav.html' %}
+            <div class="pro">
+            <div class="proj">
+                <!-- start projects -->
+                <div class="splash_img">
+                    <center>
+                        <img src="./static/images/Cplanet.png" style="width:100px" class="floating2">
+                        <img src="./static/images/Hello.png" class="floating1">
+                        <img src="./static/images/Learningplanet.png" style="width:100px" class="floating3">
+                        <p class="important">Welcome to Mission Control!</p>
+                        My name is <a href="/about">Enda Figueroa</a>.<br>
+                        I'm a Data Explorer and Code Launcher,<br>
+                        and I'm happy you're here!<br><br>
+                    </center>
+                </div>
+                <!-- Python -->
+                <div class="row py_proj">
+                    <div>
+                        <a href="/python"><left><img src="./static/images/Pythonplanet.png" class="floating1" style="float:left"></left></a>
+                        <a href="/python"><p class="important">Python</p></a>
+                        <img src="./static/images/Stars.png" style="width:30px">  <a href="/python#mission_control">Mission Control</a> - This Website<br>
+                        <img src="./static/images/Stars.png" style="width:30px">  <a href="/python#Hammurabi">Hammurabi</a> - Decision Game<br>
+                    </div>
+                </div>
+                <!-- Data -->
+                <div class="row data_proj">
+                    <div>
+                        <a href="/data"><img src="./static/images/Dbplanet.png" class="floating2" style="float:right"></a>
+                        <a href="/data"><p class="important">Data</p></a>
+                        <img src="./static/images/Rocket.png" style="width:30px">  <a href="/data#Cadence">CaDence</a> - A Dashboard Exploring Streaming Music Data<br>
+                    </div>
+                </div>
+                <!-- Java -->
+                <div class="row java_proj">
+                    <div>
+                        <a href="/java"><img src="./static/images/Javaplanet.png" class="floating3" style="float:left"></a>
+                        <a href="/java"><p class="important">Java</p></a>
+                        <img src="./static/images/Mooncloud.png" style="width:30px">  Scientific Calculator - Simple Math to Trigonometry<br>
+                    </div>
+                </div>
+                <!-- Ruby -->
+                <div class="row ruby_proj">
+                    <div>
+                        <a href="/ruby"><img src="./static/images/Ruby planet.png" class="floating1" style="float:right"></a>
+                        <a href="/ruby"><p class="important">Ruby</p></a>
+                        <img src="./static/images/Eclipse.png" style="width:30px">  Slide Show - Terminal-Based Slide Program<br>
+                    </div>
+                </div>
+                <!-- Learning -->
+                <div class="row learn_proj">
+                    <div>
+                        <a href="/learn"><img src="./static/images/Learningplanet.png" class="floating3" style="float:left; padding-left:30px"></a>
+                        <a href="/learn"><p class="important">LEARNING & THE FUTURE</p></a>
+                        <img src="./static/images/Cloud.png" style="width:30px">  <a href="/learn#learning">What I am Currently Learning</a><br>
+                        <img src="./static/images/Cloud.png" style="width:30px">  <a href="/learn#future">My Goals and Future Projects</a><br>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}

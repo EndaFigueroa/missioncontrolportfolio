@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% block head%}{% endblock %}
+{%block body%}
+<body class="pr">
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="sidebar">
+            <img src="./static/images/Mooncloud.png" style="width:30px">    <a href="/python#mission_control">Mission Control   </a>
+            <img src="./static/images/Sun.png" style="width:30px">    <a href="/python#Hammurabi">Hammurabi   </a>
+            <img src="./static/images/Moon.png" style="width:30px">    <a href="/python#otherpy">Other Python Projects</a>
+            <img src="./static/images/Eclipse.png" style="width:30px">    <a href="/python">Top   </a>
+        </div>
+
+        <div class="col-md-9">
+            {% include 'nav.html' %}
+            <div class="pro">
+                <div class="proj">
+                    <!-- start projects -->
+                    <center>
+                        <div class="pyplan">
+                        <h1>PYTHON</h1>
+                        </div>
+                        <h2 id="mission_control"><p class="important">MISSION CONTROL</p></h2>
+                        
+                    </center>
+                    <div class="proj_about">
+                        <p class="important">ABOUT</p>
+                            I wanted to create a curated portfolio website to showcase the creation process, tools, and intentions of my favorite projects.<br><br>
+                            Mission Control also highlights what I'm currently learning and my future plans.<br><br>
+                    </div>
+                    <div class="proj_tools">
+                        <p class="important">TOOLS</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="imp">Feature Scalability</p>
+                                    <ul><li>Python - Core Language</li>
+                                    <li>Flask - Web Framework</li>
+                                    <li>Jinja - Templating</li></ul>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="imp">Web Creation</p>
+                                    <ul><li>HTML - Page Creation</li>
+                                    <li>Bootstrap - Page Responsiveness</li>
+                                    <li>CSS - Styling and Animation</li></ul>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="imp">Art and Design</p>
+                                    <ul><li>Procreate - Art Asset Creation, Color Selection, Thumbnailing</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj_process">
+                        <p class="important">PROCESS</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./static/images/Site_Thumbnails_.png" style="width:100%;float:left;padding-right:10px;">
+                            </div>
+                            <div class="col-md-8">
+                                First, I picked out my favorite projects from my time in ZipCode Wilmington.<br>
+                                I then decided on a space theme to match my "Data Explorer, Code Launcher" tagline.<br>
+                                Next, I researched CSS techniques such as the floating animation and glow effects.<br>
+                                With that done, I began to work on drawing the art assets which included a business card design to match.<br>
+                                I then developed thumbnails for what I saw in my mind and used Procreate to generate colors to use in my CSS.<br>
+                                My code was written in VSCode.<br>
+                                Python and its libraries were chosen because of the ease of adding new features and possible future database implementation.<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj_future">
+                        <p class="important">FUTURE PLANS</p>
+                        <p class="imp">Blog</p>
+                            I want to create a blog for topics that I find interesting, my current progress, and status.<br>
+                            It would also mean adding in SQLAlchemy and SQLite which will just further bolster my portfolio.
+                            <br><br>
+                            <p class="imp">Refactoring</p>
+                            I would like to refactor with a focus on improving my implementation of Jinja.<br>
+                            It was very important that I developed this site as soon as possible after my graduation from ZipCode, so it is coded more like a traditional HTML site with the pages more <i>"hard-coded"</i> and less pythonic.<br>
+                            With projects in SQLite tables, I could then use Jinja to create the pages with less HTML.
+                    </div>
+                    <h2 id="Hammurabi"><center><p class="important">HAMMURABI</center></p></h2>
+                    <div class="proj_about">
+                        <p class="important">ABOUT</p>
+                            <a href="https://github.com/Hamma-Time/Hammurabi-py"><img src="./static/images/Stars.png" style="width:30px">Check It Out on GitHub</a><br>
+                            Hammurabi is a game played in the terminal, where the player makes choices that shape an ancient kingdom.<br>
+                            Python takes in the player's desicions and applies randomized events and produces an end-of-year report.<br>
+                            The goal is to rule for ten years, avoiding starvation, uprising, and plauges.<br><br>
+
+                            This was a group project. My role was class implementation, function calls, gameplay loop and game over checks, displays, end of year report, inventory, and tester.<br>
+                            My teammates provided the logic for the randomized events.<br>
+                            This was also our very first Python group project.
+                    </div>
+                    <div class="proj_process">
+                        <p class="important">PROCESS</p>
+                        <div class="row">
+                            <img src="./static/images/Screen Shot 2025-02-07 at 10.17.14 AM.png" style="width:100%;float:left;padding-right:10px;">
+                        </div>
+                        <div class="row">
+                            <br>
+                            The first step was to psuedocode the logic for the events as a team and divide the labor. I enjoy visual design and was familiar with ASCII Art, so I chose to tackle the display. 
+                            With the experience of making a scientific calculator in Java, I wanted to also tackle the function call and gameplay loop as well. 
+                            My team provided me the logic for the events and I developed the inventory as a result of testing as we went.<br><br>
+                            <img src="./static/images/Stars.png" style="width:30px"> <a href="./static/images/gameoverhama.png">Greed Game Over Screen</a>
+                            <img src="./static/images/Stars.png" style="width:30px"> <a href="./static/images/reporthama.png">End of Year Report</a>
+                            <img src="./static/images/Stars.png" style="width:30px"> <a href="./static/images/checkhama.png">Inventory and Error Check</a>
+                        </div>
+                    </div>
+                    <div class="proj_future">
+                        <p class="important">FUTURE PLANS</p>
+                        <p class="imp">PyGame</p>
+                            I want to remake this in PyGame so that it can be played outside the terminal and possibly launched from an .exe or webpage.
+                            Designing the visuals would be fun!<br><br>
+                    </div>
+                    <div class="proj_future">
+                        <h2 id="otherpy"><p class="important">OTHER PYTHON PROJECTS</p></h2>
+                        <p class="imp">CaDence</p>
+                            I've placed CaDence on the Data Planet. It is written in Python, Google Colab, Pandas, Numpy, Streamlit, MatPlotLib, along with more CSS.<br>
+                            <center><a href="/data#Cadence">Check it Out Here</a></center><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

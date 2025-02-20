@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=M+PLUS+Rounded+1c&display=swap');
+
+/* Important Font */
+.anta-regular {
+    font-family: "Anta", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.important{
+    font-family: "Anta", serif;
+    font-size: 40px;
+    color:aliceblue;
+    text-decoration: none;
+    text-shadow: 4px 4px 8px #000000;
+}
+.imp{
+    font-size: 1.5em;
+}
+
+a:visited {
+    font-family: "Anta", serif;
+    text-decoration: none;
+    text-shadow: 1px 1px red;
+}
+a:active {
+    font-family: "Anta", serif;
+    text-decoration: none;
+    text-shadow: 1px 1px #373737;
+    color: #8e44ad;
+}
+
+a {
+    font-family: "Anta", serif;
+	transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color:aliceblue;
+    text-shadow: 1px 1px #4e4d4d;
+}
+
+a:hover {
+    font-family: "Anta", serif;
+	animation: Magic 10s ease infinite;
+    text-decoration: none;
+}
+
+@keyframes Magic {
+	0% {color: aliceblue}
+	50% {color: turquoise}
+	100% {color: aliceblue}
+}
+
+
+/* Everything Else */
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body.pr{background-color: #000000;
+    font-family: "M PLUS Rounded 1c", serif;
+}
+.sidebar {
+    background-color: #000000;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    width:100%;
+    z-index: 10000;
+}
+.pbarbg{
+    color:#000!important;
+    background-color:#3a2b3e!important;
+    border-radius:10px;
+}
+.pgbarover{
+    text-align:center;
+    color:aliceblue;
+    background-color:#8e44ad!important;
+    border-radius:10px;
+}
+.pro{
+    background: rgb(61,9,138);
+    background: linear-gradient(180deg, rgba(61,9,138,0) 0%, rgba(70,7,129,1) 0%, rgba(88,1,98,1) 43%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    padding:2%;
+    margin-bottom:2%;
+    border-radius: 15px;
+    filter: drop-shadow(10px 10px 100px rgb(61, 1, 64)) drop-shadow(-10px -10px 25px rgb(51, 4, 121));
+}
+
+.proj{
+    width:100%;
+    margin:auto;
+}
+
+.proj_about{
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: left;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 2% 3% 2%;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-size: .7em;
+    color:aliceblue;
+    padding: 0% 2% 0% 2%;
+}
+
+.proj_tools{
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: left;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 2% 3% 2%;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-size: .7em;
+    color:aliceblue;
+    padding: 0% 2% 0% 2%;
+}
+.proj_process{
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: left;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 2% 3% 2%;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-size: .7em;
+    color:aliceblue;
+    padding: 0% 2% 0% 2%;
+}
+.proj_future{
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: left;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 2% 3% 2%;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-size: .7em;
+    color:aliceblue;
+    padding: 0% 2% 0% 2%;
+}
+
+.splash_img{
+    background-image: url("./images/hellobg.png");
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: top;
+    font-family: "M PLUS Rounded 1c", serif;
+    color:aliceblue;
+    padding: 5% 10% 5% 10%;
+    margin: 2% 4% 2% 4%;
+    border-radius: 20px;
+}
+
+.py_proj{
+    background-image: url("./images/Pythonbg.png");
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: left;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 6% 3% 6%;
+    font-family: "M PLUS Rounded 1c", serif;
+    color:aliceblue;
+}
+.pyplan{
+    background-image:url("./images/Pythonplanet.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.data_proj{
+    background-image: url("./images/Dbbg.png");
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: right;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 6% 3% 6%;
+    font-family: "M PLUS Rounded 1c", serif;
+    color:aliceblue;
+}
+.dataplan{
+    background-image:url("./images/Dbplanet.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.java_proj{
+    background-image: url("./images/Java big.png");
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: left;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 6% 3% 6%;
+    font-family: "M PLUS Rounded 1c", serif;
+    color:aliceblue;
+}
+.javaplan{
+    background-image:url("./images/Javaplanet.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.ruby_proj{
+    background-image: url("./images/Rubybg.png");
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: right;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 6% 3% 6%;
+    font-family: "M PLUS Rounded 1c", serif;
+    color:aliceblue;
+}
+.rubyplan{
+    background-image:url("./images/Ruby planet.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.learn_proj{
+    background-image: url("./images/Learning Bg.png");
+    background-color: #000000;
+    background-repeat:no-repeat;
+    background-position: left;
+    border: solid 15px black;
+    border-radius: 15px;
+    margin: 3% 6% 3% 6%;
+    font-family: "M PLUS Rounded 1c", serif;
+    color:aliceblue;
+}
+.learnplan{
+    background-image:url("./images/Learningplanet.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.future_proj{
+    background-image: url("./images/spacebg.jpg");
+    background-repeat:no-repeat;
+    border-radius: 15px;
+    margin: 3% 6% 3% 6%;
+    background-position: top;
+    font-family: "M PLUS Rounded 1c", serif;
+    color:aliceblue;
+}
+.futureplan{
+    background-image:url("./images/Futurestar.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.contactplan{
+    background-image:url("./images/bcarguy.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.meplan{
+    background-image:url("./images/hello.png");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding-top:80px;
+    height:250px;
+    font-family: "Anta", serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 8px #000000;
+    color:aliceblue;
+    margin: 0% 3% 3% 3%;
+}
+.mepic{
+    border: solid 4px #8e44ad;
+    border-radius: 15px;
+    float:left;
+    margin:15px;
+
+}
+
+.floating1 {
+    animation: float1 5s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
+}
+
+.floating2 {
+    animation: float2 10s ease-in-out infinite;
+}
+
+@keyframes float2 {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(0);}
+}
+.floating3 {
+    animation: float3 8s ease-in-out infinite;
+}
+
+@keyframes float3 {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-40px);}
+    75% {transform: translateY(40px);}
+    100% {transform: translateY(0);}
+}
+.navitab{
+    width:100%;
+    background-color: #000000;
+    text-align: center;
+    font-family: "Anta", serif;
+    font-size: 30px;
+    color:aliceblue;
+}

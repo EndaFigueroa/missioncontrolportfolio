@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block head%}{% endblock %}
+{%block body%}
+<body class="pr">
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-md-9">
+            {% include 'nav.html' %}
+            <div class="pro">
+                <div class="proj">
+                    <!-- start projects -->
+                    <center>
+                        <div class="javaplan">
+                        <h1>JAVA</h1>
+                        </div>
+                        <h2 id="mission_control"><p class="important">SCIENTIFIC CALCULATOR</p></h2>
+                        
+                    </center>
+                    <div class="proj_about">
+                        <p class="important">ABOUT</p>
+                        <center><a target="_blank" href="https://github.com/EndaFigueroa/ScientificCalculator">CHECK IT OUT ON GITHUB</a></center>
+                            This was our first group project and we learned Java as well as Git and repo management.
+                            <br>We were tasked with creating a scientific calculator that covered from simple math all the way to trigonometry.
+                            <br>It required that it could take in input from the user, know what math function to perform, and be able to display the results. There are also memory functions and even a bunny easter egg.
+                            <br>My job was to create the display, handle the function calls, input loops, and the bunny easter egg. I also managed the organization repo and handled merge conflicts and pull requests.
+                            <center><img src="./static/images/calccap.png"></center>
+                    </div>
+                    <div class="proj_process">
+                        <p class="important">PROCESS</p>
+                        First, we came together as a group and split up what math we were comfortable tackling. I then set to work learning how to implement my aspects. 
+                        Since this was our first time using GitHub, a lot of time was lost in learning the push pull merge process and we missed the first initial deadline.
+                        <br><br>We rallied together and managed to produce a great program within the new timeline. 
+                    </div>
+                    <div class="proj_future">
+                        <p class="important">FUTURE PLANS</p>
+                        <p class="imp">UI</p>
+                            It would be great to take this program and use something like Jframe or React to enable it to be used outside of the terminal.
+                    </div>
+                </body>
+                {%endblock%}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block head%}{% endblock %}
+{%block body%}
+<body class="pr">
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-md-9">
+            {% include 'nav.html' %}
+            <div class="pro">
+                <div class="proj">
+                    <!-- start projects -->
+                    <center>
+                        <div class="rubyplan">
+                        <h1>RUBY</h1>
+                        </div>
+                        <h2 id="mission_control"><p class="important">SLIDESHOW</p></h2>
+                        
+                    </center>
+                    <div class="proj_about">
+                        <p class="important">ABOUT</p>
+                        <center><a target="_blank" href="https://github.com/EndaFigueroa/Ruby">CHECK IT OUT ON GITHUB</a></center><br>
+                            Ruby was assigned to me and a teammate to practice tech demos. We had a weekend to complete our presentation. My teammate covered Ruby's history and I learned Ruby and developed a simple slideshow program to demonstrate the language.
+                            <br><br>It was important to heavily comment the program so that the class could see the code as well as its executed abstraction in the terminal and follow along.
+                            <br><br>I covered the four OOP pillars and the syntax used in Ruby to accomplish them, as well as examples of other things that I found interesting.
+                            <br>It felt great to pick the language up quickly and produce something that not only ran but accomplished its intended goal.<br><br>
+                    </div>
+                    <div class="proj_process">
+                        <img src="./static/images/rubeycap.png" style="width:100%;">
+                        <p class="important">PROCESS</p>
+                        
+                        I watched a bunch of videos going over the basics and read the documentation. I used what I had learned from creating the displays for Hammurabi and the Scientific Calculator and used a ASCII frame as a guide.
+                        <br>Functions were made to draw the frame, notice slide titles, and align the text evenly within the frame. The frame drawing function took in an array of strings as its argument. Those arrays were the texts for the slides.
+                        <br>Screen clearing and key press to continue were added into the function call of the app to mimic the slideshow experience.
+                        <br><br>
+                        I then created another Ruby file to show the OOP pillars in action, all of which were heavily commented. Thanks to the extensive documentation and help sites out there, Ruby was fun and easy to pick up.
+                    </div>
+                    <div class="proj_future">
+                        <p class="important">FUTURE PLANS</p>
+                        <p class="imp">IDEs</p>
+                            The presentation was developed in JetBrains Rubymine and I've since let the free trial lapse. I'd like to work on getting it to work in VSCode.
+                            <br>As for the program its self, I don't plan on developing it further. I think it was just what it needed to be, but I do really want to make something else using Ruby or Ruby on Rails in the near future!
+                    </div>
+                
+                    
+                </body>
+                {%endblock%}
